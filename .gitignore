@@ -1,0 +1,11 @@
+build*/
+.vscode/
+*temp*/
+.vs/
+Debug/
+# */*.sln
+# *.sln
+*.vcxp*
+*.*proj*.filter
+*.*proj*.user
+*.hint
