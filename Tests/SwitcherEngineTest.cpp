@@ -41,7 +41,7 @@ BOOST_AUTO_TEST_CASE( test_case_02 )
 		BOOST_REQUIRE( eng );
 		BOOST_REQUIRE( eng.win() );
 
-		eng.null_swap( up );
+		eng.null_swap( DUP );
 
 		BOOST_REQUIRE( !is_win() );
 		BOOST_REQUIRE( !eng );
@@ -80,7 +80,7 @@ BOOST_AUTO_TEST_CASE( test_case_05 )
 					break;
 				}
 
-		eng.null_swap(up);
+		eng.null_swap(DUP);
 
 		const coord null_coord2{ eng.null() };
 		for( pos i = 0; i < BOARD_SIZE; i++ )
@@ -145,8 +145,8 @@ BOOST_AUTO_TEST_CASE( cmplx_test_01 )
 		eng.shuffle();
 		BOOST_REQUIRE( !is_win() );
 
-		while( eng.null_swap( up ) ) {};
-		while( eng.null_swap( left ) ) {};
+		while( eng.null_swap( DUP ) ) {};
+		while( eng.null_swap( DLEFT ) ) {};
 
 		BOOST_REQUIRE_EQUAL( empty_value, eng[0][0] );
 		BOOST_REQUIRE( !is_win() );

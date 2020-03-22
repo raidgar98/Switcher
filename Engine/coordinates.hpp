@@ -32,10 +32,10 @@ struct coord {
 	bool operator<(const coord &val)	const { return (row != val.row ? row < val.row : col < val.col); }
 };
 
-inline const coord up{-1, 0};
-inline const coord left{0, -1};
-inline const coord down{1, 0};
-inline const coord right{0, 1};
+inline const coord DUP{-1, 0};
+inline const coord DLEFT{0, -1};
+inline const coord DDOWN{1, 0};
+inline const coord DRIGHT{0, 1};
 
 inline coord operator+(const coord &val1, const coord &val2) { return {val1.row + val2.row, val1.col + val2.col}; }
 

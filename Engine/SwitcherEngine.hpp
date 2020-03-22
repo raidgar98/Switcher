@@ -79,7 +79,7 @@ private: // varriables
 public: // methodes
 	
 	// [constructor](https://www.youtube.com/watch?v=0V5PLkFuxrY)
-	explicit SwitcherEngine(const size_t entropy = 10ul*SIZE )
+	explicit SwitcherEngine()
 	{
 		__fill();
 		assert( win() );
@@ -167,8 +167,8 @@ private: // methodes
 			return false;
 
 		// coordinates have to neighbours
-		if (first + left == second || first + right == second ||
-				first + up == second || first + down == second)
+		if (first + DLEFT == second || first + DRIGHT == second ||
+				first + DUP == second || first + DDOWN == second)
 			return true;
 		else
 			return false;
