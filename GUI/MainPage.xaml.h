@@ -10,9 +10,11 @@
 
 using Windows::UI::Xaml::Controls::Button;
 
+#define BOARD_SIZE 4
+
 namespace GUI
 {
-	constexpr size_t SIZE = 5;
+	constexpr size_t SIZE = BOARD_SIZE;
 
 	public ref class MainPage sealed
 	{
@@ -48,27 +50,37 @@ namespace GUI
 		void B0_1_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
 		void B0_2_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
 		void B0_3_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
-		void B0_4_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
+		
 		void B1_0_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
 		void B1_1_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
 		void B1_2_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
 		void B1_3_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
-		void B1_4_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
+		
 		void B2_0_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
 		void B2_1_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
 		void B2_2_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
 		void B2_3_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
-		void B2_4_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
+		
 		void B3_0_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
 		void B3_1_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
 		void B3_2_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
 		void B3_3_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
+
+#if BOARD_SIZE == 5
+
+		void B0_4_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
+		void B1_4_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
+		void B2_4_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
 		void B3_4_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
+
 		void B4_0_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
 		void B4_1_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
 		void B4_2_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
 		void B4_3_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
 		void B4_4_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
+
+#endif
+
 		void BRESET_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
 		void BSHUFFLE_Click( Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e );
 	};

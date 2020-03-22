@@ -34,11 +34,18 @@ using Windows::UI::Color;
 MainPage::MainPage()
 {
 	InitializeComponent();
-	add( 0, 0 ); add( 0, 1 ); add( 0, 2 ); add( 0, 3 ); add( 0, 4 );
-	add( 1, 0 ); add( 1, 1 ); add( 1, 2 ); add( 1, 3 ); add( 1, 4 );
-	add( 2, 0 ); add( 2, 1 ); add( 2, 2 ); add( 2, 3 ); add( 2, 4 );
-	add( 3, 0 ); add( 3, 1 ); add( 3, 2 ); add( 3, 3 ); add( 3, 4 );
+
+	add( 0, 0 ); add( 0, 1 ); add( 0, 2 ); add( 0, 3 ); 
+	add( 1, 0 ); add( 1, 1 ); add( 1, 2 ); add( 1, 3 ); 
+	add( 2, 0 ); add( 2, 1 ); add( 2, 2 ); add( 2, 3 ); 
+	add( 3, 0 ); add( 3, 1 ); add( 3, 2 ); add( 3, 3 ); 
+	
+#if BOARD_SIZE == 5
+
+	add( 0, 4 ); add( 1, 4 ); add( 2, 4 ); add( 3, 4 );
 	add( 4, 0 ); add( 4, 1 ); add( 4, 2 ); add( 4, 3 ); add( 4, 4 );
+
+#endif
 
 	sync();
 }
@@ -165,8 +172,14 @@ void GUI::MainPage::BSHUFFLE_Click( Platform::Object^ sender, Windows::UI::Xaml:
 }
 
 // Setup buttons
-button( 0, 0 ) button( 0, 1 ) button( 0, 2 ) button( 0, 3 ) button( 0, 4 )
-button( 1, 0 ) button( 1, 1 ) button( 1, 2 ) button( 1, 3 ) button( 1, 4 )
-button( 2, 0 ) button( 2, 1 ) button( 2, 2 ) button( 2, 3 ) button( 2, 4 )
-button( 3, 0 ) button( 3, 1 ) button( 3, 2 ) button( 3, 3 ) button( 3, 4 )
+button( 0, 0 ) button( 0, 1 ) button( 0, 2 ) button( 0, 3 ) 
+button( 1, 0 ) button( 1, 1 ) button( 1, 2 ) button( 1, 3 ) 
+button( 2, 0 ) button( 2, 1 ) button( 2, 2 ) button( 2, 3 ) 
+button( 3, 0 ) button( 3, 1 ) button( 3, 2 ) button( 3, 3 ) 
+
+#if BOARD_SIZE == 5
+
+button( 0, 4 ) button( 1, 4 ) button( 2, 4 ) button( 3, 4 )
 button( 4, 0 ) button( 4, 1 ) button( 4, 2 ) button( 4, 3 ) button( 4, 4 )
+
+#endif

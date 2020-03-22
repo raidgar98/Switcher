@@ -6,16 +6,16 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:Custom="using:System.Numerics"
     x:Class="GUI.MainPage"
-    mc:Ignorable="d" Height="478" Width="460" MinWidth="460" MaxWidth="460" MinHeight="500" MaxHeight="500" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+    mc:Ignorable="d" Height="400" Width="367" MinWidth="367" MaxWidth="367" MaxHeight="400" ScrollViewer.VerticalScrollBarVisibility="Disabled" MinHeight="400">
     <Grid BorderThickness="1,1,1,1" Visibility="Visible">
-        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" AutomationProperties.AccessibilityView="Content" Spacing="5" HorizontalAlignment="Left" Margin="10,10,0,0" BorderBrush="Black" BorderThickness="1,1,1,1" Visibility="Visible">
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" AutomationProperties.AccessibilityView="Content" Spacing="5" Margin="12,12,0,0" BorderBrush="Black" BorderThickness="1,1,1,1" Visibility="Visible" HorizontalAlignment="Left" Width="343">
 
             <StackPanel Orientation="Vertical" Spacing="5" BorderThickness="1,1,1,1" Visibility="Visible">
                 <Button x:Name="B0_0" Width="80" Height="80" UseLayoutRounding="True" Visibility="Visible" Click="B0_0_Click" ToolTipService.ToolTip="" TabIndex="0" />
                 <Button x:Name="B1_0" Width="80" Height="80" UseLayoutRounding="True" Visibility="Visible" Click="B1_0_Click"/>
                 <Button x:Name="B2_0" Width="80" Height="80" UseLayoutRounding="True" Visibility="Visible" Click="B2_0_Click"/>
                 <Button x:Name="B3_0" Width="80" Height="80" UseLayoutRounding="True" Visibility="Visible" Click="B3_0_Click"/>
-                <Button x:Name="B4_0" Width="80" Height="80" UseLayoutRounding="True" Visibility="Visible" Click="B4_0_Click"/>
+                <!--<Button x:Name="B4_0" Width="80" Height="80" UseLayoutRounding="True" Visibility="Visible" Click="B4_0_Click"/>-->
 
             </StackPanel>
             <StackPanel Orientation="Vertical" Spacing="5" BorderThickness="1,1,1,1" Visibility="Visible">
@@ -24,7 +24,7 @@
                 <Button x:Name="B1_1" Width="80" Height="80" UseLayoutRounding="True" Click="B1_1_Click"/>
                 <Button x:Name="B2_1" Width="80" Height="80" UseLayoutRounding="True" Click="B2_1_Click"/>
                 <Button x:Name="B3_1" Width="80" Height="80" UseLayoutRounding="True" Click="B3_1_Click"/>
-                <Button x:Name="B4_1" Width="80" Height="80" UseLayoutRounding="True" Click="B4_1_Click"/>
+                <!--<Button x:Name="B4_1" Width="80" Height="80" UseLayoutRounding="True" Click="B4_1_Click"/>-->
 
             </StackPanel>
             <StackPanel Orientation="Vertical" Spacing="5" BorderThickness="1,1,1,1" Visibility="Visible">
@@ -33,7 +33,7 @@
                 <Button x:Name="B1_2" Width="80" Height="80" UseLayoutRounding="True" Click="B1_2_Click"/>
                 <Button x:Name="B2_2" Width="80" Height="80" UseLayoutRounding="True" Click="B2_2_Click"/>
                 <Button x:Name="B3_2" Width="80" Height="80" UseLayoutRounding="True" Click="B3_2_Click"/>
-                <Button x:Name="B4_2" Width="80" Height="80" UseLayoutRounding="True" Click="B4_2_Click"/>
+                <!--<Button x:Name="B4_2" Width="80" Height="80" UseLayoutRounding="True" Click="B4_2_Click"/>-->
 
             </StackPanel>
             <StackPanel Orientation="Vertical" Spacing="5" BorderThickness="1,1,1,1" Visibility="Visible">
@@ -42,10 +42,10 @@
                 <Button x:Name="B1_3" Width="80" Height="80" UseLayoutRounding="True" Click="B1_3_Click"/>
                 <Button x:Name="B2_3" Width="80" Height="80" UseLayoutRounding="True" Click="B2_3_Click"/>
                 <Button x:Name="B3_3" Width="80" Height="80" UseLayoutRounding="True" Click="B3_3_Click"/>
-                <Button x:Name="B4_3" Width="80" Height="80" UseLayoutRounding="True" Click="B4_3_Click"/>
+                <!--<Button x:Name="B4_3" Width="80" Height="80" UseLayoutRounding="True" Click="B4_3_Click"/>-->
 
             </StackPanel>
-            <StackPanel Orientation="Vertical" Spacing="5" BorderThickness="1,1,1,1" Visibility="Visible">
+            <!--<StackPanel Orientation="Vertical" Spacing="5" BorderThickness="1,1,1,1" Visibility="Visible">
 
                 <Button x:Name="B0_4" Width="80" Height="80" UseLayoutRounding="True" Click="B0_4_Click"/>
                 <Button x:Name="B1_4" Width="80" Height="80" UseLayoutRounding="True" Click="B1_4_Click"/>
@@ -53,11 +53,12 @@
                 <Button x:Name="B3_4" Width="80" Height="80" UseLayoutRounding="True" Click="B3_4_Click"/>
                 <Button x:Name="B4_4" Width="80" Height="80" UseLayoutRounding="True" Click="B4_4_Click"/>
 
-            </StackPanel>
+            </StackPanel>-->
 
         </StackPanel>
-        <Button x:Name="ResetButton" Content="Reset" Margin="10,440,0,0" VerticalAlignment="Top" Width="214" Visibility="Visible" Click="BRESET_Click"/>
-        <Button x:Name="ShuffleButton" Content="Shuffle" Margin="227,440,0,0" VerticalAlignment="Top" Width="214" Visibility="Visible" Click="BSHUFFLE_Click"/>
+        <Button x:Name="ResetButton" Content="Reset" Margin="11,356,0,0" VerticalAlignment="Top" Width="173" Visibility="Visible" Click="BRESET_Click"/>
+        <Button x:Name="ShuffleButton" Content="Shuffle" Margin="186,356,0,0" VerticalAlignment="Top" Width="170" Visibility="Visible" Click="BSHUFFLE_Click"/>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="459,255,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Page>
