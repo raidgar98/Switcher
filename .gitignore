@@ -5,8 +5,8 @@ build*/
 Debug/
 # */*.sln
 # *.sln
-*.vcxp*
-*.*proj*.filter
+# *.vcxp*
+*.*proj*.filt*
 *.*proj*.user
 *.hint
 */Generated*/
