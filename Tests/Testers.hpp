@@ -11,7 +11,7 @@
 #include "../Engine/SwitcherEngine.hpp"
 
 // 3'rd party
-#include <rang.hpp>
+#include "../sub/include/rang.hpp"
 
 // constexpresions
 constexpr size_t BOARD_SIZE{ 5ul };
