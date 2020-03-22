@@ -99,15 +99,22 @@ public: // methodes
 	const row_arr& operator[](const size_t row)															const	noexcept {	return get(row);		}
 
 	// non-const methodes
+
+	// reset board to ordered state
 	void reset()																								noexcept {	__fill();				}
+
+	//shuffles all board
 	void shuffle( const size_t entropy = 10ul * SIZE )															noexcept {	__shuffle(entropy);		}
-	bool swap( const coord& first, const coord& second )														noexcept
+
+	// swaps two cells
+	bool swap( const coord& first, const coord& second )														noexcept 
 	{
 		if(!__is_swap_possible(first, second)) return false;
 		__swap(first, second);
 		return true;
 	}
-	bool null_swap( const coord& direction )																	noexcept
+	// moves null cell relatively to itself (TIP: use consts like: up, down, left, right here)
+	bool null_swap( const coord& direction )																	noexcept 
 	{
 		const coord first = null();
 		const coord second = first + direction;

@@ -19,7 +19,7 @@ constexpr size_t BOARD_SIZE{ 5ul };
 // macros
 #define FUN( FUN_NAME ) auto FUN_NAME = [&X](){ return X.FUN_NAME(); };
 #define FIELD( FIELD_NAME ) auto& FIELD_NAME = X.FIELD_NAME;
-#define INITIALIZE_TEST( CLASS ) CLASS X;  FUN(is_win); FIELD(eng); FIELD(as_it_should_be);
+#define INITIALIZE_TEST( CLASS ) CLASS X; FUN(is_win) FIELD(eng) FIELD(as_it_should_be)
 
 
 class base_tester

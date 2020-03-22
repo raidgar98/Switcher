@@ -38,3 +38,9 @@ inline const coord down{1, 0};
 inline const coord right{0, 1};
 
 inline coord operator+(const coord &val1, const coord &val2) { return {val1.row + val2.row, val1.col + val2.col}; }
+
+inline std::ostream& operator<<( std::ostream& os, const coord& src )
+{
+	os << "( " << src.row << ", " << src.col << " )";
+	return os;
+}
