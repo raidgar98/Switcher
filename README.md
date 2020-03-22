@@ -4,9 +4,9 @@
 ## How to import as project
 
 0.	Make sure you have installed `Visual Studio 2019` with installed:
-	-  `English Language Package`
-	- C++ Development Pack
-	- UWP Development Pack
+	- English Language Package
+	- `C++` Development Pack
+	- `UWP` Development Pack
 
 1.	First of all install [`vcpkg`](https://github.com/microsoft/vcpkg) to install boost, or do it by yourself ( if so, you have to then add paths to cloned project, and you can skip this and next point ).
 
